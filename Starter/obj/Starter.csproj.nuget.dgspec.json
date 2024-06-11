@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Mon_Code\\GuidedProject\\Starter\\Starter.csproj": {}
+    "C:\\Mon_Code\\GuidedProject\\Starter\\Starter.csproj": {}
   },
   "projects": {
-    "c:\\Mon_Code\\GuidedProject\\Starter\\Starter.csproj": {
+    "C:\\Mon_Code\\GuidedProject\\Starter\\Starter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Mon_Code\\GuidedProject\\Starter\\Starter.csproj",
+        "projectUniqueName": "C:\\Mon_Code\\GuidedProject\\Starter\\Starter.csproj",
         "projectName": "Starter",
-        "projectPath": "c:\\Mon_Code\\GuidedProject\\Starter\\Starter.csproj",
+        "projectPath": "C:\\Mon_Code\\GuidedProject\\Starter\\Starter.csproj",
         "packagesPath": "C:\\Users\\shawn\\.nuget\\packages\\",
-        "outputPath": "c:\\Mon_Code\\GuidedProject\\Starter\\obj\\",
+        "outputPath": "C:\\Mon_Code\\GuidedProject\\Starter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

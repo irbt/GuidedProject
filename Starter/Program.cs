@@ -1,41 +1,55 @@
 ﻿using System;
 
+Console.Clear();
+
 // initialize variables - graded assignments 
 int currentAssignments = 5;
-string[] studentNames = new string [] {"sophia", "andrew", "emma", "logan"};
+string[] studentNames = new string[] { "sophia", "andrew", "emma", "logan" };
 int[] studentScores = new int[10];
 
 
-int[] sophiaScores = new int[]{90, 86, 87, 98, 100};
-int[] andrewScores = new int[]{92, 89, 81, 86, 90};
-int[] emmaScores =   new int[]{90, 85, 87, 98, 68};
-int[] loganScores =  new int[]{90, 95, 87, 88, 96};
+int[] sophiaScores = new int[] { 90, 86, 87, 98, 100 };
+int[] andrewScores = new int[] { 92, 89, 81, 86, 90 };
+int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
+int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
-
+// En-tête
+Console.WriteLine("Student\t\tGrade\n");
 // calculer les sommes
 foreach (string name in studentNames)
 {
-    int sophiaSum = 0;
-    decimal sophiaScore = 0;
+    string currentStudent = name;
 
-    if (name == "sophia")
+    if (currentStudent == "sophia")
     {
-        foreach (int score in sophiaScores)
-        {
-            sophiaSum = score;
-        }
+        studentScores = sophiaScores;
+    }
+    else if (currentStudent == "andrew")
+    {
+        studentScores = andrewScores;
+    }
+    else if (currentStudent == "emma")
+    {
+        studentScores = emmaScores;
+    }
+    else if (currentStudent == "logan")
+    {
+        studentScores = loganScores;
     }
 
-    
-        sophiaScore = (decimal)sophiaSum / currentAssignments;
+    int studentSum = 0;
+    decimal studentScore = 0;
 
-
-        Console.WriteLine("Student\t\tGrade\n");
-        Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
-
+    foreach (int score in studentScores)
+    {
+        studentSum += score;
     }
+
+    studentScore = (decimal)studentSum / currentAssignments;
+
+    Console.WriteLine($"{currentStudent}:\t\t{studentScore}\t?");
+
 }
 
-
-Console.WriteLine("Press the Enter key to continue");
+Console.WriteLine("\nPress the Enter key to continue");
 Console.ReadLine();
